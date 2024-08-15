@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+/* Reseta margens e paddings, define box-sizing e fonte padrão */
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Define o fundo com gradiente e altura da página */
+body {
+    background: linear-gradient(to top, #450074, #000000ec);
+    height: 100%;
+}
+
+/* Estilo do cabeçalho */
+header {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    width: 800px; /* Centraliza o conteúdo */
+}
+
+/* Estilo do título no cabeçalho */
+.topo-titulo {
+    width: 440px;
+    background: linear-gradient(to bottom, #450074, #000000ec);
+    border: 2px solid #fff;
+    border-radius: 50px;
+}
+
+/* Estilo do texto do título */
+.topo-titulo h1 {
+    font-size: 44px;
+    color: #fff;
+    font-family: "Playwrite BE WAL", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.topo-titulo a{
+    text-decoration: none;
+}
+
+/* Estilo da lista de navegação */
+nav ul {
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* Estilo dos itens de navegação */
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* Estilo dos links de navegação */
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo de hover nos links de navegação */
+nav ul li a:hover {
+    font-size: 20px;
+    color: #450074;
+}
+
+/* Estilo do corpo principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilo das seções */
+section {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Estilo da seção 'Sobre' */
+.limitar-secao {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Estilo do título na seção 'Sobre' */
+.secao-sobre h1 {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilo do conteúdo principal da seção 'Sobre' */
+.secao-sobre .main-sobre {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    gap: 20px;
+}
+
+/* Estilo das imagens na seção 'Sobre' */
+.info-sobre img {
+    width: 20px;
+    height: auto;
+}
+
+/* Estilo do texto na seção 'Sobre' */
+.info-sobre p {
+    color: #fff;
+    line-height: 200%;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace, sans-serif;
+}
+
+/* Estilo da imagem de perfil na seção 'Sobre' */
+.img-sobre {
+    width: 350px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+/* Estilo da seção 'Formação' */
+.secao-formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo do conteúdo principal da seção 'Formação' */
+.secao-formacao .main-formacao {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Estilo das imagens na seção 'Formação' */
+.main-formacao img {
+    width: 277px;
+    height: 100%;
+}
+
+/* Estilo do título na seção 'Formação' */
+.secao-formacao h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Estilo do texto na seção 'Formação' */
+.formacao-p p {
+    font-size: 20px;
+    display: flex;
+    color: #fff;
+}
+
+/* Posiciona ícones ao lado do texto na seção 'Formação' */
+.info-p {
+    position: relative;
+    padding-left: 28px;
+}
+
+/* Estilo dos ícones na seção 'Formação' */
+.formacao-p .icon-idioma::before,
+.formacao-p .icon-formacao::before,
+.formacao-p .icon-linguagem::before {
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Imagens de ícones específicos */
+.formacao-p .icon-idioma::before {
+    background-image: url('img/idioma.png');
+}
+
+.formacao-p .icon-formacao::before {
+    background-image: url('img/001-graduate.png');
+}
+
+.formacao-p .icon-linguagem::before {
+    background-image: url('img/dev.png');
+}
+
+/* Estilo da seção 'Projetos' */
+.secao-projetos h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Estilo do texto na seção 'Projetos' */
+.secao-projetos p {
+    padding: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Estilo da imagem do projeto na seção 'Projetos' */
+.secao-projetos .img-projeto {
+    width: 800px;
+    height: auto;
+    padding: 30px;
+    opacity: 0.7; /* Efeito de opacidade inicial */
+}
+
+/* Efeito de hover na imagem do projeto */
+.secao-projetos .img-projeto:hover {
+    opacity: 1; /* Remoção do efeito de opacidade */
+}
+
+/* Estilo da seção de formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo do título da seção de formulário */
+.secao-formulario h4 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Estilo dos rótulos de entrada no formulário */
+form label {
+    margin-top: 10px;
+    padding: 5px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Estilo dos campos de entrada no formulário */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo do botão de envio no formulário */
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Efeito de hover no botão de envio */
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Estilo do botão de subir ao topo */
+.botao-subir a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 50px;
+    right: 80px;
+    background-image: url("img/seta.png");
+    background-position: center;
+    background-size: cover;
+    background-color: #000000;
+    border-radius: 50px;
+}
+
+/* Efeito de hover no botão de subir ao topo */
+.botao-subir a:hover {
+    height: 65px;
+    width: 65px;
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS externo -->
+        <!-- Fontes do Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+WAL:wght@100..400&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="img/pt.jpg">
+        <title>Portifólio Pessoal</title> <!-- Título da página -->
+    </head>
+    <body>
+        <header> <!-- Cabeçalho da página -->
+            <div class="topo-titulo">
+                <a href="index.html">
+                    <h1>Peterson Tenório</h1><!-- Título do portfólio -->
+                </a> 
+            </div>
+            <nav>
+                <ul> <!-- Links de navegação para seções da página -->
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+      
+        <main> <!-- Corpo principal do conteúdo -->
+            <section class="secao-sobre limitar-secao" id="sobre"> 
+                <h1>SOBRE MIM</h1> <!-- Seção de informações sobre mim -->
+                <div class="main-sobre">  
+                    <img class="img-sobre" src="img/pt.jpg" alt="Peterson" title="Lindo"> <!-- Imagem minha -->
+                    <div class="info-sobre">
+                        <p>Sou um entusiasta de tecnologia desde criança e um torcedor fanático do Palmeiras. Apaixonado por inovação, estou sempre em busca de novos desafios e oportunidades para aplicar minhas habilidades e aprender mais.</p>
+                    </div>
+                </div>
+            </section>
+      
+            <section class="secao-formacao limitar-secao" id="formacao">
+                <h2>FORMAÇÃO</h2> <!-- Seção de formação educacional -->
+                <div class="main-formacao">
+                    <img src="img/uninter.jpg" alt="Imagem Uninter">
+                    <div class="formacao-p">
+                        <p class="info-p icon-idioma">Idiomas: Português e Inglês</p><br>
+                        <p class="info-p icon-formacao">Formação educacional: Cursando ADS - Uninter</p><br>
+                        <p class="info-p icon-linguagem">Linguagem dominante: Python</p>
+                    </div>
+                </div>
+            </section>
+      
+            <section class="secao-projetos limitar-secao" id="projetos">
+                <h3>Projetos</h3> <!-- Seção de projetos realizados -->
+                <p>Clique na imagem abaixo e veja meu projeto: Agência de viagens.</p>
+                <a href="https://agencia-de-viagens-six-nu.vercel.app/" target="_blank">
+                    <img src="img/viagem.png" alt="Projeto" class="img-projeto"> <!-- Link do projeto -->
+                </a>
+            </section>
+      
+            <section class="limitar-secao secao-formulario" id="contato">
+                <h4>Contato</h4> <!-- Seção de formulário de contato -->
+                <form action="mailto:seuemail@exemplo.com" method="post">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br>
+                    <input type="submit" value="Enviar">
+                </form>
+                <div class="botao-subir">
+                    <a href="index.html"></a> <!-- Botão para voltar ao topo -->
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
